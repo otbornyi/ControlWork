@@ -10,3 +10,15 @@ void FillArray(string[] A)
         A[i] = temp[i];
     }
 }
+
+void Choise(string[] A)
+{
+    for (int i = 0; i < A.Length; i++)
+    {
+        string Z = A[i];
+        if (Z.Length < 4)
+        {
+            Console.Write($"{A[i]} ");
+        }
+    }
+}
