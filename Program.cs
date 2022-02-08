@@ -1,4 +1,4 @@
-﻿Console.WriteLine("Введите слово или цифры: ");
+﻿Console.WriteLine("Введите слова либо цифры через пробел: ");
 string test = Console.ReadLine();
 string[] temp = test.Split(new Char[] { ' ' });
 int K = temp.Length;
@@ -22,3 +22,7 @@ void Choise(string[] A)
         }
     }
 }
+
+string[] A = new string[K];
+FillArray(A);
+Choise(A);
